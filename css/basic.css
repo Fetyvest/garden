@@ -1,0 +1,26 @@
+:root {
+    --font-roboto: "Roboto", serif;
+    --font-libre: "Libre Baskerville", serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+ul, ol {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
