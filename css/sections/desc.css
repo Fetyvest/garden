@@ -21,7 +21,7 @@
 .desc__title {
     font-family: var(--font-libre);
     font-weight: 400;
-    font-size: 45px;
+    font-size: clamp(2.125rem, 1.972rem + 0.701vi, 2.813rem);
     line-height: 110%;
     text-transform: capitalize;
     color: #fff;
@@ -30,7 +30,7 @@
 .desc__text {
     font-family: var(--font-roboto);
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.944rem + 0.255vi, 1.25rem);
     line-height: 150%;
     color: #fff;
     margin-top: 32px;
@@ -56,6 +56,7 @@
 
     .desc__info-block {
         order: 2;
+        text-align: center;
     }
 
     .desc__leaf {
@@ -64,5 +65,15 @@
 
     .desc__content img:first-child {
         width: 90%;
+    }
+
+    .desc {
+        padding: 57px 16px 63px 16px;
+    }
+}
+
+@media(max-width: 750px) {
+    .desc__content {
+        gap: 16px;
     }
 }
